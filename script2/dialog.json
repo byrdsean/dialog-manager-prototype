@@ -1,0 +1,35 @@
+{
+    "dialog": [
+        {
+            "id": "d1",
+            "title": "Sean",
+            "text": "What type of fruit do [b]you[/b] like?",
+            "nextDialog": "d2",
+            "choice": {
+                "name": "fruit",
+                "options": [
+                    { "title": "Apples", "value": "apples", "nextDialog": "d4"},
+                    { "title": "Oranges", "value": "oranges"},
+                    { "title": "Banana", "value": "banana"}
+                ]
+            }
+        },
+        {
+            "id": "d2",
+            "title": "Chris",
+            "text": "Oh, so [style class='test1 test2' data-name='hello']you[/style] [wave]love[/wave] {fruit}!",
+            "nextDialog": "d3"
+        },
+        {
+            "id": "d3",
+            "title": "Sean",
+            "text": "Yep, they are delicious!!"
+        },
+        {
+            "id": "d4",
+            "title": "Chris",
+            "text": "Ugh, gross! You like {fruit}!?! That's disgusting...",
+            "nextDialog": "END"
+        }
+    ]
+}
